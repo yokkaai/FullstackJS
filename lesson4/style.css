@@ -1,0 +1,39 @@
+h1 {
+    background-color: #aed9e0; 
+  }
+
+  .box {
+    background-color: #d1cfe2; 
+  }
+
+  #work {
+    background-color: #c5f2c7; 
+  }
+
+  [data-value="work-home"] {
+    background-color: #ffe0ac; 
+  }
+
+  div span {
+    background-color: #ffcad4;
+  }
+
+  .parent > p {
+    background-color: #f6eac2;
+  }
+
+  ul.menu li a {
+    color: #a88fac; 
+  }
+
+  .outer p.inner {
+    background-color: #e0bbE4; 
+  }
+
+  h1#title.main {
+    background-color: #b5ead7;
+  }
+
+  p[data-type="paragraf"] {
+    background-color: #ffdfd3; 
+  }
