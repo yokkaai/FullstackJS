@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Пункт 2</title>
+</head>
+
+<body>
+
+    <h1>Тестова HTML-сторінка</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Пункт 1-7 (крім 3) </a></li>
+            <li><a href="task3-1.html">Пункт 3.1</a></li>
+            <li><a href="task3-2.html">Пункт 3.2</a></li>
+        </ul>
+    </nav>
+
+    <div class="block">
+        Lorem ipsum dolor sit amet, <span class="inline">consectetur</span> adipiscing elit.
+    </div>
+
+    <div class="block">
+        Sed do eiusmod tempor incididunt ut <span class="inline">labore et dolore</span> magna aliqua.
+    </div>
+
+    <p>
+        Тут абзац з <span class="inline">тестовим інлайновим елементом</span> посередині тексту.
+    </p>
+
+    <div class="block">
+        <strong>Ще один блок:</strong> Lorem ipsum dolor sit amet,
+        <span class="inline">elit sed do</span>, eiusmod tempor incididunt.
+    </div>
+
+    <!-- Пункт 4 -->
+    <section>
+        <h2>4. Властивість display та box-sizing</h2>
+
+        <div class="display-block">Цей блок — display: block</div>
+        <span class="display-inline">Inline 1</span>
+        <span class="display-inline">Inline 2</span>
+
+        <div class="display-flex">
+            <div class="flex-item">Flex 1</div>
+            <div class="flex-item">Flex 2</div>
+        </div>
+
+        <div class="box-sizing-example">Box-sizing: border-box</div>
+    </section>
+
+    <!-- Пункт 5 -->
+    <section>
+        <h2>5. Float та Clear</h2>
+
+        <div class="float-container">
+            <div class="float-box">Float 1</div>
+            <div class="float-box">Float 2</div>
+            <div class="clear-box">Цей блок очищає обтікання (clear: both)</div>
+        </div>
+    </section>
+
+    <!-- Пункт 6 -->
+    <section>
+        <h2>6. Overflow</h2>
+
+        <div class="overflow-container">
+            Дуже довгий текст, який перевищує межі контейнера. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+        </div>
+    </section>
+
+    <!-- Пункт 7 -->
+    <section>
+        <h2>7. Позиціонування елементів</h2>
+
+        <div class="position-static">Static (за замовчуванням)</div>
+        <div class="position-relative">Relative — зсунутий на 20px</div>
+
+        <div style="position: relative; height: 100px; background: #eee;">
+            <div class="position-absolute">Absolute — прикріплений до країв батька</div>
+        </div>
+
+        <div class="position-fixed">Fixed — завжди зверху</div>
+
+        <div class="position-sticky-container">
+            <div class="position-sticky">Sticky — прилипає при скролі</div>
+            <p>Прокрутіть цей блок, щоб побачити sticky в дії.</p>
+            <p>Ще текст для прокручування. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
