@@ -173,3 +173,123 @@ h3 {
 .footer__author {
    margin-bottom: 20px;
 }
+
+/* ===================== */
+/*   ДО 1200px           */
+/* ===================== */
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .advanteges__list {
+        gap: 30px;              /* компактніше між картками */
+        flex-wrap: wrap;        /* дозволяємо перенос */
+        justify-content: center;
+    }
+}
+
+/* ===================== */
+/*   ДО 768px (планшет)  */
+/* ===================== */
+@media (max-width: 768px) {
+    /* бокові відступи, щоб контент не прилипав */
+    .container {
+        padding: 0 15px;
+    }
+
+    nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: auto;          /* перекриваємо фіксовану висоту */
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    h1 + p {
+        margin-top: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .hero__content {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* 2 колонки для переваг */
+    .advanteges__item {
+        width: calc(50% - 15px);
+        justify-content: center;
+    }
+
+    /* відео адаптивне */
+    .works__video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: none;
+        display: block;
+    }
+}
+
+/* ===================== */
+/*   ДО 375px (мобільні) */
+/* ===================== */
+@media (max-width: 375px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h1 + p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* 1 колонка для переваг */
+    .advanteges__item {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .advanteges__list {
+        gap: 20px;
+    }
+
+    .works__container p {
+        font-size: 15px;
+    }
+
+    .hero .primary,
+    button.primary {
+        width: 100%;
+        padding: 16px;
+    }
+}
+
