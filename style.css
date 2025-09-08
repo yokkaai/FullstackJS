@@ -1,267 +1,234 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 1.3;
-    color: black;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  color: black;
+  margin: 0;
 }
 
 .container {
-    max-width: 1110px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
 }
-
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 64px;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 64px;
+  padding: 0;
+  margin: 0;
 }
 
 .hero {
-    padding: 80px 0 40px;
-    background-color: #eeeff1;
-    height: 70vh;
+  padding: 80px 0 40px;
+  background-color: #eeeff1;
+  height: 70vh;
 }
-
 .hero__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
-
 .hero__content {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
-
 .hero h1 {
-    font-size: 48px;
-    font-weight: 500;
+  font-size: 48px;
+  font-weight: 500;
 }
-
-.hero h1+p {
-    color: #727272;
-    margin-top: 60px;
-    max-width: 540px;
+.hero h1 + p {
+  color: #727272;
+  margin-top: 60px;
+  max-width: 540px;
 }
-
-button {
-    font-family: "Roboto", sans-serif;
-    padding: 24px 40px;
-    font-size: 16px;
-    background: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-    text-transform: uppercase;
+.hero button.primary {
+  font-family: "Roboto", sans-serif;
+  padding: 24px 40px;
+  font-size: 16px;
+  background-color: #34547A;
+  color: white;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-
-button.primary {
-    background-color: #34547A;
-    color: white;
-}
-
-button.primary:hover {
-    background-color: rgb(36.7586206897, 59.3793103448, 86.2413793103);
+.hero button.primary:hover {
+  background-color: rgb(36.7586206897, 59.3793103448, 86.2413793103);
 }
 
 .about {
-    padding: 100px 0;
-    background-color: #f9f9f9;
-    text-align: center;
+  padding: 100px 0;
+  background-color: #f9f9f9;
+  text-align: center;
 }
-
 .about__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .about h2 {
-    font-size: 32px;
-    font-weight: 500;
+  font-size: 32px;
+  font-weight: 500;
 }
-
-.about h2+p {
-    color: #727272;
-    margin-top: 50px;
-    max-width: 540px;
+.about h2 + p {
+  color: #727272;
+  margin-top: 50px;
+  max-width: 540px;
 }
 
 .advanteges {
-    padding: 100px 0;
-    background-color: #34547A;
-    color: white;
-    text-align: center;
+  padding: 100px 0;
+  background-color: #34547A;
+  color: white;
+  text-align: center;
 }
-
 .advanteges__item {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-
 .advanteges__list {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-
 .advanteges h3 {
-    font-size: 21px;
-    font-weight: 500;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .works {
-    padding: 100px 0;
-    background-color: #eeeff1;
+  padding: 100px 0;
+  background-color: #eeeff1;
 }
-
-.works__video {
-    margin-top: 60px;
-}
-
 .works__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
 .works__container p {
-    font-size: 16px;
+  font-size: 16px;
 }
-
-.footer {
-    padding: 50px 0;
-    background-color: #34547A;
-    color: white;
+.works__video {
+  margin-top: 60px;
 }
-
-.footer__copy {
-    font-size: 13px;
-}
-
-.footer__author {
-    margin-bottom: 20px;
-}
-
-@media (max-width: 1200px) {
-    nav ul {
-        gap: 40px;
-    }
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    .advanteges__list {
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    nav ul {
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        height: auto;
-        padding: 60px 0;
-    }
-
-    h1 {
-        font-size: 32px;
-        text-align: center;
-
-        +p {
-            margin-top: 30px;
-            font-size: 15px;
-            text-align: center;
-        }
-    }
-}
-
-.hero__content {
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.advanteges__item {
-    width: calc(50% - 15px);
-    justify-content: center;
-}
-
 .works__video iframe {
+  width: 560px;
+  height: 315px;
+  border: none;
+  display: block;
+}
+@media (max-width: 768px) {
+  .works__video iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    border: none;
-    display: block;
+  }
+}
+.works h2 {
+  font-size: 32px;
+  font-weight: 500;
 }
 
+.footer {
+  padding: 50px 0;
+  background-color: #34547A;
+  color: white;
+}
+.footer__copy {
+  font-size: 13px;
+}
+.footer__author {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  nav ul {
+    gap: 40px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .about h2 {
+    font-size: 28px;
+  }
+  .advanteges__list {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero {
+    height: auto;
+    padding: 60px 0;
+  }
+  .hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .hero h1 + p {
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .hero__content {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .advanteges__item {
+    width: calc(50% - 15px);
+    justify-content: center;
+  }
+}
 @media (max-width: 375px) {
-    nav ul {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h1+p {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .advanteges__item {
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .advanteges__list {
-        gap: 20px;
-    }
-
-    .works__container p {
-        font-size: 15px;
-    }
-
-    .hero button.primary {
-        width: 100%;
-        padding: 16px;
-    }
-}
-
-/*# sourceMappingURL=style.css.map */
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .about h2 {
+    font-size: 20px;
+  }
+  .hero h1 + p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .advanteges__item {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .advanteges__list {
+    gap: 20px;
+  }
+  .works__container p {
+    font-size: 15px;
+  }
+  .hero button.primary {
+    width: 100%;
+    padding: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
