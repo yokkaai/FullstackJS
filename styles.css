@@ -1,0 +1,91 @@
+:root {
+    /* Navbar */
+    --navbar-bg: #ffc0cb;
+    --navbar-text: #000000;
+    --navbar-text-hover: #ff69b4;
+    --navbar-text-active: #ff1493;
+    --navbar-text-disabled: #f8c8d8;
+
+    /* Dropdown */
+    --dropdown-bg: #ffe4e1;
+    --dropdown-text: #ff1493;
+    --dropdown-hover-bg: #ffb6c1;
+    --dropdown-hover-text: #ffffff;
+
+    /* Пошукова форма */
+    --search-border: #ff69b4;
+    --search-focus-border: #ff1493;
+    --search-focus-shadow: rgba(255, 105, 180, 0.25);
+
+    /* Кнопка */
+    --btn-border: #ff69b4;
+    --btn-text: #ff69b4;
+    --btn-hover-bg: #ff69b4;
+    --btn-hover-text: #ffffff;
+}
+
+/* Фон і кольори navbar */
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar-brand,
+.nav-link,
+.nav-link.dropdown-toggle {
+    color: var(--navbar-text);
+    font-weight: 500;
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-link.dropdown-toggle:hover {
+    color: var(--navbar-text-hover);
+}
+
+/* Активна посилання */
+.nav-link.active {
+    color: var(--navbar-text-active);
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: var(--dropdown-bg);
+}
+
+.dropdown-item {
+    color: var(--dropdown-text);
+}
+
+.dropdown-item:hover {
+    background-color: var(--dropdown-hover-bg);
+    color: var(--dropdown-hover-text);
+}
+
+/* Disabled link */
+.nav-link.disabled {
+    color: var(--navbar-text-disabled);
+}
+
+/* Пошукова форма */
+.form-control {
+    border: 1px solid var(--search-border);
+}
+
+.form-control:focus {
+    border-color: var(--search-focus-border);
+
+}
+
+/* Кнопка */
+.btn-outline-success {
+    border-color: var(--btn-border);
+    color: var(--btn-text);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-hover-text);
+    border-color: var(--btn-border);
+}
+
+
