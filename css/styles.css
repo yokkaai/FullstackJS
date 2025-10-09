@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: dm-sans, sans-serif;
+    color: var(--main-color);
+
+}
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+button{
+    font-size: 16px;
+    font-family: dm-sans, sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 0.75rem 1rem;
+    background-color: transparent;  
+    border: 1px solid transparent;
+    cursor: pointer;    
+}
+
+button.contained{
+background-color: var(--primary-color) ;
+color: var(--white-color);
+}
+
+button.outlined{
+   border-color:  var(--primary-color);
+   color: var(--primary-color);
+}
+
+
+/* header */
+
+.logo{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.header {
+    padding: 2rem 0;
+}
+
+.header__wrapper,
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu__list a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.menu__list a:hover{
+    color: var(--primary-color);
+}
+
+/* hero */
+.hero {
+    padding: 80px 0 48px;
+}
