@@ -36,8 +36,8 @@
                             </li>
                         </ul>
                     </nav>
-                    <button class="contained">Cart (2)</button>
-                    <button class="outlined">Sing In</button>
+                    <button class="button contained">Cart (2)</button>
+                    <button class="button outlined">Sing In</button>
                 </div>
             </div>
         </div>
@@ -49,10 +49,61 @@
             <div class="container">
                 <h1>Our Menu</h1>
                 <p>
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quaerat assumenda dolores recusandae, quas, ipsam cumque dolore pariatur voluptatibus fugit animi quod dolorum aut, labore quae beatae similique sit qui.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quaerat assumenda dolores
+                    recusandae, quas, ipsam cumque dolore pariatur voluptatibus fugit animi quod dolorum aut, labore
+                    quae beatae similique sit qui.
                 </p>
             </div>
         </section>
+
+
+        <section class="search">
+            <div class="container">
+                <div class="form-element">
+                    <div class="form-element__header">
+                        <label for="search">Search</label>
+                        <button class="clear-button">Clear</button>
+                    </div>
+                    <div class="search-input__wrapper">
+                        <input id="search" class="search-input" type="text" placeholder="Enter keyword">
+                        <img src="img/search.png" alt="" width="16px" height="16px" class="search-input__icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories__list " max-width="600px">
+                <button class="categories__item">COFFEE AND BAVARAGE</button>
+                <button class="categories__item active">FOOD AND SNACKS</button>
+                <button class="categories__item">IMAJI COFFEE AT HOME</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <ul class="product__list">
+                    <li class="product">
+                        <div class="product__image--wrapper">
+                            <div class="product__label product__label--sale">Sale</div>
+                            <picture>
+                                <img src="img/product@1x.jpg" class="product__image">
+                            </picture>
+                        </div>
+                        <h5 class="product__title"> SeaFood Lunch</h5>
+                        <p class="product__delivery">Only at Cafe and Delivery</p>
+                        <div class="product__price">
+                            <div class="product__current-price"> $5.00</div>
+                            <div class="product__old-price">$6.00</div>
+                        </div>
+                        <p class="product__discount"> Get 20% Off in App</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>
