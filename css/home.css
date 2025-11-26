@@ -86,56 +86,7 @@
     margin-bottom: 1rem;
 }
 
-.product__label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.75rem 1.125rem;
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
 
-.product__label--sale {
-    color: var(--white-color);
-    background-color: var(--red);
-}
-
-.product__title {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.product__delivery {
-    color: var(--grey);
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
-}
-
-.product__price {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.product__current-price {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.product__old-price {
-    font-size: 1.125rem;
-    text-decoration: line-through;
-}
-
-.product__discount {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--primary);
-}
 
 .products__button--wrapper {
     text-align: center;
