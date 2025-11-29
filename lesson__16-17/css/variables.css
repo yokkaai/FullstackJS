@@ -1,0 +1,18 @@
+:root {
+
+    --main-color: #121212;
+    --white-color: #ffffff;
+
+    --primary: #a27b5c;
+    --primary-00: #fcf7ef;
+    --primary-10: #6c523d;
+    --primary-20: #36291F;
+    
+    --grey: #7f7f7f;
+    --grey-10: #e3e3e3;
+
+    --red: #f14c35;
+
+    --basic-font-size: 16px;
+    --basic-font-family: "DM Sans", "Franklin Gothic Medium", sans-serif;
+}
