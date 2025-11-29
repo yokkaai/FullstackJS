@@ -84,6 +84,10 @@ input::placeholder {
     cursor: not-allowed;
 }
 
+.button.full-width {
+    width: 100%;
+}
+
 .clear-button {
     font-size: var(--basic-font-size);
     font-family: var(--basic-font-family);
@@ -159,8 +163,8 @@ h3 {
 
 .cart-product__label {
     position: absolute;
-    /* top: 0; */
-    /* left: 0; */
+    /* top: 0;
+    left: 0; */
     padding: 0.75rem 1.125rem;
     font-size: 1.125rem;
     text-transform: uppercase;

@@ -136,7 +136,7 @@
 
 
                 <ul class="recommend-products__wrapper">
-                     <li class="product">
+                    <li class="product">
                         <div class="product__image--wrapper">
                             <div class="cart-product__label cart-product__label--sale">Sale</div>
                             <picture>
@@ -152,7 +152,7 @@
                         </div>
                         <p class="cart-product__discount"> Get 20% Off in App</p>
                     </li>
-                       <li class="product">
+                    <li class="product">
                         <div class="product__image--wrapper">
                             <div class="cart-product__label cart-product__label--sale">Sale</div>
                             <picture>
@@ -168,7 +168,7 @@
                         </div>
                         <p class="cart-product__discount"> Get 20% Off in App</p>
                     </li>
-                       <li class="product">
+                    <li class="product">
                         <div class="product__image--wrapper">
                             <div class="cart-product__label cart-product__label--sale">Sale</div>
                             <picture>
@@ -184,7 +184,7 @@
                         </div>
                         <p class="cart-product__discount"> Get 20% Off in App</p>
                     </li>
-                       <li class="product">
+                    <li class="product">
                         <div class="product__image--wrapper">
                             <div class="cart-product__label cart-product__label--sale">Sale</div>
                             <picture>
@@ -208,13 +208,58 @@
 
     </main>
 
+    <div class="sidebar">
 
+        <div class="sidebas__backdrop"></div>
 
+        <div class="sidebar__content">
+            <header class="sidebar__header">
+                <h1>My Cart</h1>
 
-
-
-
-
+                <button class="sidebar__close-btn">
+                    <img src="./assets/icons/plus.svg">
+                </button>
+            </header>
+            <div class="sidebar__wrapper">
+                <div class="table">
+                    <div class="table__header">
+                        <div class="">Product</div>
+                        <div class="">Price</div>
+                        <div class="">Quantity</div>
+                        <div class="">Subtotal</div>
+                    </div>
+                    <ul class="">
+                        <li class="table__row">
+                            <div class="product-cell">
+                                <img src="img/cart-product.jpg" alt="/">
+                                <div class="">
+                                    <h2 class="product-cell__title">At Home - Classic</h2>
+                                    <p class="product-cell__category">IMAJI Coffe At Home </p>
+                                </div>
+                            </div>
+                            <div class="price-cell">$4.00</div>
+                            <div class="quantity-cell">
+                                <div class="counter">
+                                    <button> <img src="assets/icons/minus.svg" alt=""></button>
+                                    <span>1</span>
+                                    <button> <img src="assets/icons/plus.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="subtotal-cell">$4.00</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar__footer">
+                <h3 class="summary__title">Summary</h3>
+                <div class="summary__line">
+                    <div class="summary__subtitle"> Total</div>
+                    <div class="summary__price"> $4.00 </div>
+                </div>
+                <button class="button contained full-width"> Checkout </button>
+            </div>
+        </div>
+    </div>
 
 
 
