@@ -18,41 +18,63 @@ console.log('#8. JavaScript homework example file')
  */
 
 function createDomElement(tagName, textContent, container) {
-  // code here
+  const element = document.createElement(tagName);
+  elemet.textContent = textContent;
+  container.appendChild(element);
 }
 
 // Демонстрація використання функції
 // const container = document.body // В якості прикладу використовуємо body як контейнер
 // console.log(createDomElement('p', 'This paragraph has been added to the specified container.', container))
 
+
+
 /*
  * #2
  *
  * Задача: Встановлення cookie з корисною інформацією на 10 секунд
- * Мета: Розробити функцію setUserInfoCookie, яка встановлює cookie з ім'ям userInfo та значенням у форматі "ключ=значення", яке зберігає корисну інформацію про користувача (наприклад, обрану мову інтерфейсу) та має термін дії 10 секунд. Значення cookie повинно бути відповідно закодовано для безпечного зберігання у веб-браузері.
+ * Мета: Розробити функцію setUserInfoCookie, яка встановлює cookie з ім'ям userInfo 
+ * та значенням у форматі "ключ=значення", яке зберігає корисну інформацію про користувача 
+ * (наприклад, обрану мову інтерфейсу) та має термін дії 10 секунд. Значення cookie повинно 
+ * бути відповідно закодовано для безпечного зберігання у веб-браузері.
  *
  * Вимоги до функції:
  *
- * 1. Функція приймає два аргументи: key (назва інформаційного параметра) та value (значення параметра).
+ * 1. Функція приймає два аргументи: key (назва інформаційного параметра) 
+ * та value (значення параметра).
  * 2. Функція кодує значення параметра для коректного зберігання у cookie.
- * 3. Функція встановлює cookie userInfo з закодованим значенням "ключ=значення" та встановлює термін його дії на 10 секунд.
- * 4. При встановленні cookie, функція виводить інформаційне повідомлення у консоль про успішне зберігання даних.
+ * 3. Функція встановлює cookie userInfo з закодованим значенням "ключ=значення" та встановлює
+ *  термін його дії на 10 секунд.
+ * 4. При встановленні cookie, функція виводить інформаційне повідомлення у
+ *  консоль про успішне зберігання даних.
  */
 
 // setUserInfoCookie.js
 
 function setUserInfoCookie(key, value) {
-  // code here
+const cookieValue = `${(key)}=${(value)}`;
+const encodedValue = encodeURIComponent(cookieValue);
+const expires = new Date();
+expires.setTime(expirationDate.getTime() + (10 * 1000)); 
+
+document.cookie = `userInfo=${encodedValue}; expires=${expirationDate.toUTCString()}; path=/`;
 }
 
 // Демонстрація використання функції
-// setUserInfoCookie('language', 'en');
+setUserInfoCookie('language', 'en');
+
+
+
+
 
 /*
  * #3
  *
  * Задача: Робота з sessionStorage для зберігання та отримання даних користувача
- * Мета: Створити дві функції, saveUserInfo і getUserInfo, для взаємодії з sessionStorage. Перша функція повинна зберігати інформацію про користувача, а друга - отримувати її. Крім того, обидві функції повинні виводити відповідні повідомлення у консоль про успішне збереження або отримання даних.
+ * Мета: Створити дві функції, saveUserInfo і getUserInfo, для взаємодії з sessionStorage.
+ *  Перша функція повинна зберігати інформацію про користувача, а друга - отримувати її. 
+ * Крім того, обидві функції повинні виводити відповідні повідомлення у консоль про успішне
+ *  збереження або отримання даних.
  *
  * Вимоги до saveUserInfo:
  *
@@ -69,11 +91,14 @@ function setUserInfoCookie(key, value) {
  */
 
 function saveUserInfo(key, value) {
-  // code here
+window.sessionStorage.setItem(key, value);
+console.log(`Saved ${key}: ${value}`);
 }
 
 function getUserInfo(key) {
-  // code here
+ const data = window.sessionStorage.getItem(key);
+ console.log(`Retrieved ${key}: ${value}`);
+ return data;
 }
 
 // Демонстрація використання функцій
