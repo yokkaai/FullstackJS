@@ -17,11 +17,27 @@ console.log('#9. JavaScript homework example file')
  */
 
 function handleButtonClick(buttonId, message) {
-  // code here
+  const button = document.getElementById(buttonId);
+
+  if (!button) {
+    console.error(`Button with id "${buttonId}" not found`);
+    return;
+  }
+
+  button.addEventListener('click', () => {
+    console.log(message);
+  });
 }
+
+
+
 
 // Демонстрація використання функції (припустимо, що HTML містить кнопку з ID 'myButton')
 // handleButtonClick('myButton', 'Button clicked!');
+
+
+
+
 
 /*
  * #2
@@ -37,21 +53,46 @@ function handleButtonClick(buttonId, message) {
  */
 
 function trackMousePosition() {
-  // code here
+  document.addEventListener('mousemove', function (event) {
+    console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+  });
 }
 
+export { trackMousePosition };
 // console.log(trackMousePosition())
+
+
+
+
+
+
+
 
 /*
  * #3
  *
  * Задача: Реалізація делегування подій для відстеження кліків на елементах списку
- * Мета: Створити функцію setupEventDelegation, яка дозволить встановити обробник подій на весь список, замість окремих елементів `<li>`. Функція повинна відстежувати кліки на елементах <li> у межах заданого списку і логувати текст "Item clicked: [Текст Елемента]", де "[Текст Елемента]" - це текст клікнутого елемента `<li>`, в консоль.
+ * Мета: Створити функцію setupEventDelegation, яка дозволить встановити обробник 
+ * подій на весь список, замість окремих елементів `<li>`. 
+ * Функція повинна відстежувати кліки на елементах <li> у межах заданого списку
+ *  і логувати текст "Item clicked: [Текст Елемента]", де "[Текст Елемента]" - 
+ * це текст клікнутого елемента `<li>`, в консоль.
  *
  * Вимоги до реалізації:
- * 1. Вибір елемента списку: Функція повинна приймати селектор CSS як аргумент, що вказує на елемент списку `<ul>` або `<ol>`, до якого буде застосовано делегування подій.
- * 2. Встановлення обробника подій: Використовуючи метод addEventListener, функція має додати обробник для події `click` на весь список. Обробник повинен спрацьовувати при кліку на будь-який з елементів `<li>` у цьому списку.
- * 3. Логування кліків: Коли елемент <li> клікнуто, функція має вивести у консоль повідомлення у форматі "Item clicked: [Текст Елемента]", де "[Текст Елемента]" має бути текстом клікнутого елемента <li>. Текст елемента має бути обрізаним trim(), щоб видалити зайві пробіли на початку та в кінці.
+ * 1. Вибір елемента списку: Функція повинна приймати селектор CSS як аргумент,
+ *  що вказує на елемент списку `<ul>` або `<ol>`, до якого буде застосовано 
+ * делегування подій.
+ * 
+ * 2. Встановлення обробника подій: Використовуючи метод addEventListener,
+ *  функція має додати обробник для події `click` на весь список.
+ *  Обробник повинен спрацьовувати при кліку на будь-який з елементів `<li>` 
+ * у цьому списку.
+ * 
+ * 3. Логування кліків: Коли елемент <li> клікнуто, функція має вивести
+ *  у консоль повідомлення у форматі "Item clicked: [Текст Елемента]", 
+ * де "[Текст Елемента]" має бути текстом клікнутого елемента <li>. 
+ * Текст елемента має бути обрізаним trim(), щоб видалити зайві пробіли
+ *  на початку та в кінці.
  *
  */
 
@@ -67,9 +108,22 @@ function trackMousePosition() {
 // createTestList()
 
 function setupEventDelegation(selector) {
-  // code here
+  const list = document.querySelector(selector);
+
+  if (!list) {
+    console.error("List not found");
+    return;
+  }
+
+  list.addEventListener("click", function (event) {
+    if (event.target.tagName === "LI") {
+      const text = event.target.textContent.trim();
+      console.log(`Item clicked: ${text}`);
+    }
+  });
 }
 
+export { setupEventDelegation };
 // setupEventDelegation('#testList')
 
 // Експорт функції для використання та тестування
