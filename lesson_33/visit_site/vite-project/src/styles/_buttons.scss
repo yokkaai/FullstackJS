@@ -1,0 +1,11 @@
+.button {
+  background-color: $bg-color;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: aliceblue;
+  }
+}
